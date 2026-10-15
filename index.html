@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyberpunk Synthwave - Music Album Release</title>
+
+  <!-- 1. Підключення Google Fonts (Sans-Serif: Inter та Montserrat) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="grid-container">
+    <!-- Шапка (Header) -->
+    <header class="header">
+      <div class="logo">
+        <svg class="logo-svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+        </svg>
+        <span class="logo-text">SYNTH-RECORDS</span>
+      </div>
+      <button class="btn-pulse">Слухати зараз</button>
+    </header>
+
+    <!-- Сайдбар (Sidebar) -->
+    <aside class="sidebar">
+      <nav class="nav-menu">
+        <ul>
+          <li class="active"><a href="#">🎵 Головна</a></li>
+          <li><a href="#">💿 Альбоми</a></li>
+          <li><a href="#">🔥 Топ треки</a></li>
+          <li><a href="#">📻 Радіо</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Основна область (Main Content) -->
+    <main class="main-content">
+      <section class="album-hero">
+        <picture class="album-cover-wrapper">
+          <source srcset="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600&q=80" type="image/webp">
+          <img 
+            src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600&q=80" 
+            alt="Обкладинка альбому Neon Dreams" 
+            class="album-cover" 
+            loading="lazy"
+          >
+        </picture>
+        
+        <div class="album-info">
+          <span class="badge">Новий реліз</span>
+          <h1>Neon Dreams (2026)</h1>
+          <p class="artist">Виконавець: CyberWave</p>
+          <p class="description">Футуристичний синтвейв-альбом, створений для занурення в неонову атмосферу нічного міста.</p>
+        </div>
+      </section>
+
+      <!-- Семантична таблиця трек-листа -->
+      <section class="tracklist-section">
+        <h2>Список треків</h2>
+        <table class="tracklist-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Назва треку</th>
+              <th>Жанр</th>
+              <th>Тривалість</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="track-row">
+              <td>1</td>
+              <td>Cybernetic Sunrise</td>
+              <td>Synthwave</td>
+              <td>03:45</td>
+            </tr>
+            <tr class="track-row">
+              <td>2</td>
+              <td>Midnight Cruise</td>
+              <td>Retrowave</td>
+              <td>04:12</td>
+            </tr>
+            <tr class="track-row">
+              <td>3</td>
+              <td>Neon Pulse</td>
+              <td>Darksynth</td>
+              <td>03:58</td>
+            </tr>
+            <tr class="track-row">
+              <td>4</td>
+              <td>Digital Skyline</td>
+              <td>Ambient Synth</td>
+              <td>05:01</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- Плеєр / Футер (Player & Footer) -->
+    <footer class="player-footer">
+      <div class="player-info">
+        <span class="now-playing-title">Зараз грає: Cybernetic Sunrise</span>
+      </div>
+      <audio controls class="audio-player">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Ваш браузер не підтримує аудіоелемент.
+      </audio>
+    </footer>
+  </div>
+
+</body>
+</html>
